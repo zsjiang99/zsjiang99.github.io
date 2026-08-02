@@ -17,18 +17,18 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hello! I am **Zesong Jiang**, a Ph.D. student in the School of Electrical, Computer and Energy Engineering (ECEE) at **Arizona State University**, advised by [**Prof. Jeff Zhang**](https://search.asu.edu/profile/4346755). I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025, advised by Prof. Bensheng Qiu, and my B.S. from **Jilin University** in 2022.
+Hello! I am **Zesong Jiang**, a Ph.D. student in the School of Electrical, Computer and Energy Engineering (ECEE) at **Arizona State University**, advised by [**Prof. Jeff Zhang**](https://search.asu.edu/profile/4346755). I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025, and my B.S. from **Jilin University** in 2022.
 
-I build **LLM-based multi-agent systems that automate chip design and verification**, and **hardware accelerators for efficient AI**. I am also currently a Research Intern at **IBM Silicon Valley Lab**.
+My research focuses on **AI for Chip Design** and **Computer Architecture**. I am also currently a Research Intern at **IBM Silicon Valley Lab**.
 
-<span class="tag">Multi-Agent Systems for EDA</span> <span class="tag">LLM for Chip Design & Verification</span> <span class="tag">Agentic Workflows</span> <span class="tag">Hardware Accelerators for ML</span> <span class="tag">Efficient AI</span>
+<span class="tag">LLM-based Hardware Architecture Generation</span> <span class="tag">LLM for Chip Physical Design</span> <span class="tag">Reconfigurable Accelerators (CGRA)</span> <span class="tag">HW/SW Co-Design for Efficient AI</span>
 
 Always happy to discuss research and collaborations — reach me at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.
 
 # 🔥 News
 - *2026.05*: &nbsp;🔬 Joined **IBM Silicon Valley Lab** as a Research Intern.
+- *2026.05*: &nbsp;📄 **MACO** and **CAPO** accepted (see [Publications](#-publications)).
 - *2026.03*: &nbsp;🎤 Gave an invited talk on **MACO** at the **NSF Workshop on Agents for Chip Design Automation** — received the **Student Travel Award**.
-- *2026.02*: &nbsp;📄 **MACO** and **CAPO** accepted (see [Publications](#-publications)).
 - *2025.08*: &nbsp;🚀 Started my **Ph.D.** at **Arizona State University**.
 - *2025.06*: &nbsp;🎓 Graduated from **USTC** as **Outstanding Graduate of Anhui Province**.
 
