@@ -26,12 +26,12 @@ My research focuses on **AI for Chip Design** and **Computer Architecture**, par
 I welcome research discussions and collaborations. You can reach me at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.
 
 # 🔥 News
-- [May. 2026] [Experience] Joined **IBM Silicon Valley Lab** as a Research Intern.
-- [May. 2026] [Paper] Our work **"MACO: A Multi-Agent LLM Framework for Automated CGRA Hardware/Software Co-Design"** was accepted to **ICLAD 2026**.
-- [May. 2026] [Paper] Our work **"CAPO: Certification-Guided Agentic Workflow for Physical Design Parameter Optimization"** was accepted to **GLSVLSI 2026**.
-- [Mar. 2026] [Talk] Gave an invited talk on **MACO** at the **NSF Workshop on Agents for Chip Design Automation**.
-- [Aug. 2025] [Education] Started my Ph.D. at **Arizona State University**.
-- [Jun. 2025] [Award] Graduated from **USTC** as an **Outstanding Graduate of Anhui Province**.
+- <span class="news-date">[May. 2026]</span> <span class="news-type news-type--position">[Position]</span> Joined **IBM Silicon Valley Lab** as a Research Intern.
+- <span class="news-date">[May. 2026]</span> <span class="news-type news-type--publication">[Publication]</span> Our work **"MACO: A Multi-Agent LLM Framework for Automated CGRA Hardware/Software Co-Design"** was accepted to **ICLAD 2026**.
+- <span class="news-date">[May. 2026]</span> <span class="news-type news-type--publication">[Publication]</span> Our work **"CAPO: Certification-Guided Agentic Workflow for Physical Design Parameter Optimization"** was accepted to **GLSVLSI 2026**.
+- <span class="news-date">[Mar. 2026]</span> <span class="news-type news-type--talk">[Invited Talk]</span> Presented **MACO** at the **NSF Workshop on Agents for Chip Design Automation**.
+- <span class="news-date">[Aug. 2025]</span> <span class="news-type news-type--education">[Education]</span> Began my Ph.D. at **Arizona State University**.
+- <span class="news-date">[Jun. 2025]</span> <span class="news-type news-type--honor">[Honor]</span> Named an **Outstanding Graduate of Anhui Province** upon graduating from **USTC**.
 
 # 📝 Publications
 
