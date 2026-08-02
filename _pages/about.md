@@ -113,17 +113,7 @@ I welcome research discussions and collaborations. You can reach me at <a href="
 
 <div class="exp-item" markdown="1">
 **Arizona State University**, Tempe, AZ, USA <span class="exp-date">Aug 2025 – Present</span>
-<span class="exp-role">Graduate Research Assistant — NAIRR Pilot (with Microsoft): an end-to-end automated LLM-based multi-agent RTL workflow on Microsoft Discovery; **MACO** multi-agent CGRA co-design; **X-Stream** algorithm–hardware co-design for explainable AI.</span>
-</div>
-
-<div class="exp-item" markdown="1">
-**Institute of Computing Technology, CAS**, Beijing, China <span class="exp-date">Aug 2023 – Sep 2024</span>
-<span class="exp-role">Research Intern — **IICPilot**, an LLM-based multi-agent IC backend design automation platform; and a programmable data-reordering deep learning accelerator extending NVDLA for unified signal and DL workloads.</span>
-</div>
-
-<div class="exp-item" markdown="1">
-**SOPHGO**, Beijing, China <span class="exp-date">Dec 2022 – Feb 2023</span>
-<span class="exp-role">IC Front-end Verification Intern — built and maintained verification environments and participated in front-end functional validation of the Athena-2 SoC.</span>
+<span class="exp-role">Graduate Research Assistant — LLM for Chip Design; Reconfigurable Accelerator; HW/SW Co-Design.</span>
 </div>
 
 # 🎤 Talks
