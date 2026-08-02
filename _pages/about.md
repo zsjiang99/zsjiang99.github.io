@@ -19,7 +19,7 @@ redirect_from:
 
 I am **Zesong Jiang**, a Ph.D. student in Electrical, Computer and Energy Engineering at **Arizona State University**, advised by [**Prof. Jeff Zhang**](https://search.asu.edu/profile/4346755) and working closely with [**Cheng Tan**](https://tancheng.github.io/). I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025 and my B.S. from **Jilin University** in 2022.
 
-My research focuses on **AI for Chip Design** and **Computer Architecture**, particularly LLM-based design automation, reconfigurable accelerators (CGRA), and hardware/software co-design. I am currently a Research Intern at **IBM Silicon Valley Lab**.
+My research focuses on **AI for Chip Design** and **Computer Architecture**, particularly **LLM-based Design Automation**, **Reconfigurable Accelerators (CGRA)**, and **Hardware/Software Co-Design**. I am currently a Research Intern at **IBM Silicon Valley Lab**.
 
 <!-- <span class="tag">LLM-based Hardware Architecture Generation</span> <span class="tag">LLM for Chip Physical Design</span> <span class="tag">Reconfigurable Accelerators (CGRA)</span> <span class="tag">HW/SW Co-Design for Efficient AI</span> -->
 
