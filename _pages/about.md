@@ -28,7 +28,7 @@ I welcome research discussions and collaborations. You can reach me at <a href="
 # 🔥 News
 - *2026.05*: &nbsp;🔬 Joined **IBM Silicon Valley Lab** as a Research Intern.
 - *2026.05*: &nbsp;📄 **MACO** and **CAPO** accepted (see [Publications](#-publications)).
-- *2026.03*: &nbsp;🎤 Gave an invited talk on **MACO** at the **NSF Workshop on Agents for Chip Design Automation** — received the **Student Travel Award**.
+- *2026.03*: &nbsp;🎤 Gave an invited talk on **MACO** at the **NSF Workshop on Agents for Chip Design Automation**.
 - *2025.08*: &nbsp;🚀 Started my **Ph.D.** at **Arizona State University**.
 - *2025.06*: &nbsp;🎓 Graduated from **USTC** as **Outstanding Graduate of Anhui Province**.
 
