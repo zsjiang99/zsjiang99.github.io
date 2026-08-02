@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hello! I am **Zesong Jiang**, a Ph.D. student in the School of Electrical, Computer and Energy Engineering (ECEE) at **Arizona State University**, advised by **Prof. Jeff Zhang**. I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025, advised by Prof. Bensheng Qiu, and my B.S. from **Jilin University** in 2022.
+Hello! I am **Zesong Jiang**, a Ph.D. student in the School of Electrical, Computer and Energy Engineering (ECEE) at **Arizona State University**, advised by [**Prof. Jeff Zhang**](https://search.asu.edu/profile/4346755). I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025, advised by Prof. Bensheng Qiu, and my B.S. from **Jilin University** in 2022.
 
 I build **LLM-based multi-agent systems that automate chip design and verification**, and **hardware accelerators for efficient AI**. I am also currently a Research Intern at **IBM Silicon Valley Lab**.
 
@@ -35,7 +35,7 @@ Always happy to discuss research and collaborations — reach me at <a href="mai
 # 📝 Publications
 
 <div class="pub-card">
-<div class="pub-thumb"><img src="images/publications/maco.svg" alt="MACO"></div>
+<div class="pub-thumb"><a href="images/maco.png" title="Click to enlarge"><img src="images/maco.png" alt="MACO"></a></div>
 <div class="pub-body" markdown="1">
 **MACO: A Multi-Agent LLM Framework for Automated CGRA Hardware/Software Co-Design** <span class="pub-venue">ICLAD 2026</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Yuqi Sun, Qing Zhong, Mahathi Krishna, Deepak Patil, Cheng Tan, Jeff Zhang</span>
@@ -44,7 +44,7 @@ Always happy to discuss research and collaborations — reach me at <a href="mai
 </div>
 
 <div class="pub-card">
-<div class="pub-thumb"><img src="images/publications/capo.svg" alt="CAPO"></div>
+<div class="pub-thumb"><a href="images/capo.png" title="Click to enlarge"><img src="images/capo.png" alt="CAPO"></a></div>
 <div class="pub-body" markdown="1">
 **CAPO: Certification-Guided Agentic Workflow for Physical Design Parameter Optimization** <span class="pub-venue">GLSVLSI 2026</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Qihang Wu, Bing-yue Wu, Jeff Zhang</span>
@@ -134,7 +134,7 @@ Always happy to discuss research and collaborations — reach me at <a href="mai
 - *2018 – 2022*: Undergraduate Scholarship — First Prize, Jilin University.
 
 # 📖 Education
-- *2025.08 - Present*, Ph.D. Student, Electrical, Computer and Energy Engineering, **Arizona State University**. Advisor: Prof. Jeff Zhang.
+- *2025.08 - Present*, Ph.D. Student, Electrical, Computer and Energy Engineering, **Arizona State University**. Advisor: [Prof. Jeff Zhang](https://search.asu.edu/profile/4346755).
 - *2022.09 - 2025.06*, M.S., Electrical & Computer Engineering, **University of Science and Technology of China**. Advisor: Prof. Bensheng Qiu. (GPA 3.87/4.3, Rank 1/27)
 - *2018.09 - 2022.06*, B.S., Electrical & Computer Engineering, **Jilin University**. (GPA 3.76/4.0, Rank 21/335)
 
