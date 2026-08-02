@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zesong Jiang"
-description              : "Research on AI, Chip design and etc. Enjoy the life! 🙂"
+description              : "Ph.D. Student @ Arizona State University · LLM Multi-Agent Systems for EDA & Chip Design"
 repository               : "zsjiang99/zsjiang99.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zesong Jiang"
   avatar           : "images/website2.jpg"
-  bio              : "Master student at University of Science and Technology of China"
-  location         : "Hefei City, Anhui Province, China"
-  employer         :
-  pubmed           : 
+  bio              : "Ph.D. Student in ECEE at Arizona State University"
+  location         : "Tempe, AZ, USA"
+  employer         : "Arizona State University"
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=7-vOVeUAAAAJ"
-  email            : "jiangzesong@mail.ustc.edu.cn"
+  email            : "zjian137@asu.edu"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
