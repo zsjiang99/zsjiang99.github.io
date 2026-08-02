@@ -26,11 +26,12 @@ My research focuses on **AI for Chip Design** and **Computer Architecture**, par
 I welcome research discussions and collaborations. You can reach me at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.
 
 # 🔥 News
-- *2026.05*: &nbsp;🔬 Joined **IBM Silicon Valley Lab** as a Research Intern.
-- *2026.05*: &nbsp;📄 **MACO** and **CAPO** accepted (see [Publications](#-publications)).
-- *2026.03*: &nbsp;🎤 Gave an invited talk on **MACO** at the **NSF Workshop on Agents for Chip Design Automation**.
-- *2025.08*: &nbsp;🚀 Started my **Ph.D.** at **Arizona State University**.
-- *2025.06*: &nbsp;🎓 Graduated from **USTC** as **Outstanding Graduate of Anhui Province**.
+- [May. 2026] [Experience] Joined **IBM Silicon Valley Lab** as a Research Intern.
+- [May. 2026] [Paper] Our work **"MACO: A Multi-Agent LLM Framework for Automated CGRA Hardware/Software Co-Design"** was accepted to **ICLAD 2026**.
+- [May. 2026] [Paper] Our work **"CAPO: Certification-Guided Agentic Workflow for Physical Design Parameter Optimization"** was accepted to **GLSVLSI 2026**.
+- [Mar. 2026] [Talk] Gave an invited talk on **MACO** at the **NSF Workshop on Agents for Chip Design Automation**.
+- [Aug. 2025] [Education] Started my Ph.D. at **Arizona State University**.
+- [Jun. 2025] [Award] Graduated from **USTC** as an **Outstanding Graduate of Anhui Province**.
 
 # 📝 Publications
 
