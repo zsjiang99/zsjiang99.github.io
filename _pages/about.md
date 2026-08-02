@@ -23,7 +23,7 @@ My research focuses on **AI for Chip Design** and **Computer Architecture**, par
 
 <!-- <span class="tag">LLM-based Hardware Architecture Generation</span> <span class="tag">LLM for Chip Physical Design</span> <span class="tag">Reconfigurable Accelerators (CGRA)</span> <span class="tag">HW/SW Co-Design for Efficient AI</span> -->
 
-I welcome research discussions and collaborations. You can reach me at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.
+I welcome research discussions and collaborations. You can reach me via <a href="mailto:zjian137@asu.edu">email</a>.
 
 # 🔥 News
 - <span class="news-date">[May. 2026]</span> <span class="news-type news-type--position">[Position]</span> Joined **IBM Silicon Valley Lab** as a Research Intern.
