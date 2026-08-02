@@ -19,7 +19,7 @@ redirect_from:
 
 Hello! I am **Zesong Jiang**, a Ph.D. student in the School of Electrical, Computer and Energy Engineering (ECEE) at **Arizona State University**, advised by [**Prof. Jeff Zhang**](https://search.asu.edu/profile/4346755). I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025, and my B.S. from **Jilin University** in 2022.
 
-My research focuses on **AI for Chip Design** and **Computer Architecture**. I am also currently a Research Intern at **IBM Silicon Valley Lab**.
+My research focuses on **AI for Chip Design** and **Computer Architecture**. I am also currently a Research Intern at **IBM Silicon Valley Lab**, and I work closely with [**Cheng Tan**](https://tancheng.github.io/).
 
 <span class="tag">LLM-based Hardware Architecture Generation</span> <span class="tag">LLM for Chip Physical Design</span> <span class="tag">Reconfigurable Accelerators (CGRA)</span> <span class="tag">HW/SW Co-Design for Efficient AI</span>
 
@@ -40,6 +40,7 @@ Always happy to discuss research and collaborations — reach me at <a href="mai
 **MACO: A Multi-Agent LLM Framework for Automated CGRA Hardware/Software Co-Design** <span class="pub-venue">ICLAD 2026</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Yuqi Sun, Qing Zhong, Mahathi Krishna, Deepak Patil, Cheng Tan, Jeff Zhang</span>
 <span class="pub-intro">Specialized LLM agents co-design CGRA hardware and software end-to-end (OpenCGRA + commercial EDA, ASAP7 7nm), <span class="pub-note">−25.9% power and +20.0% performance</span> over human experts and prior LLM methods. Long paper (20% acceptance).</span>
+<span class="pub-links">[arXiv](https://arxiv.org/abs/2509.13557)</span>
 </div>
 </div>
 
@@ -49,6 +50,7 @@ Always happy to discuss research and collaborations — reach me at <a href="mai
 **CAPO: Certification-Guided Agentic Workflow for Physical Design Parameter Optimization** <span class="pub-venue">GLSVLSI 2026</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Qihang Wu, Bing-yue Wu, Jeff Zhang</span>
 <span class="pub-intro">An agentic workflow that optimizes physical-design parameters, using certification/verification feedback to steer the search toward better PPA.</span>
+<span class="pub-links">[ACM](https://dl.acm.org/doi/10.1145/3787109.3816403)</span>
 </div>
 </div>
 
@@ -98,6 +100,7 @@ Always happy to discuss research and collaborations — reach me at <a href="mai
 **A Biodegradable Piezoelectric Scaffold Promotes Spinal Cord Injury Nerve Regeneration** <span class="pub-venue">Nano Energy 2024</span>
 <span class="pub-authors">Jinjing Zhang, Qiong Wang, Xiaoyi Tang, Mingyang Chai, Nuo Liu, <u>Zesong Jiang</u>, Xingjiang Li, Ping Chen</span>
 <span class="pub-intro">A biodegradable piezoelectric scaffold that promotes nerve regeneration after spinal cord injury (co-authored). <em>Nano Energy</em>, vol. 132, p. 110382.</span>
+<span class="pub-links">[DOI](https://doi.org/10.1016/j.nanoen.2024.110382)</span>
 </div>
 </div>
 
