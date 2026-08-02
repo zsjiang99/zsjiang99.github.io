@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zesong Jiang"
-description              : "Ph.D. Student @ Arizona State University · LLM Multi-Agent Systems for EDA & Chip Design"
+description              : "Ph.D. student at Arizona State University researching AI for chip design and computer architecture."
 repository               : "zsjiang99/zsjiang99.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zesong Jiang"
   avatar           : "images/website2.jpg"
-  bio              : "Ph.D. Student in ECEE at Arizona State University"
+  bio              : "Ph.D. student · AI for chip design"
   location         : "Tempe, AZ, USA"
   employer         : "Arizona State University"
   pubmed           :
@@ -136,7 +136,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Phoenix
 
 
 # Plugins
