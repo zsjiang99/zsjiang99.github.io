@@ -21,5 +21,5 @@
   <text x="150" y="94" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="27" font-weight="700" fill="#ffffff" letter-spacing="0.5">Cryo-FPGA</text>
   <line x1="127" y1="110" x2="173" y2="110" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.4"/>
   <text x="150" y="131" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="12.5" fill="#ffffff" fill-opacity="0.92">FPGA at Cryogenic Temp.</text>
-  <text x="150" y="180" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" letter-spacing="1.6" fill="#ffffff" fill-opacity="0.8">IC & SYSTEMS 2024</text>
+  <text x="150" y="180" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" letter-spacing="1.6" fill="#ffffff" fill-opacity="0.8">IC &amp; SYSTEMS 2024</text>
 </svg>

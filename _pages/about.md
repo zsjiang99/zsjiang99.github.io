@@ -17,13 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hello! I am **Zesong Jiang**, a Ph.D. student in the School of Electrical, Computer and Energy Engineering (ECEE) at **Arizona State University**, advised by [**Prof. Jeff Zhang**](https://search.asu.edu/profile/4346755). I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025, and my B.S. from **Jilin University** in 2022.
+I am **Zesong Jiang**, a Ph.D. student in Electrical, Computer and Energy Engineering at **Arizona State University**, advised by [**Prof. Jeff Zhang**](https://search.asu.edu/profile/4346755) and working closely with [**Cheng Tan**](https://tancheng.github.io/). I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025 and my B.S. from **Jilin University** in 2022.
 
-My research focuses on **AI for Chip Design** and **Computer Architecture**. I am also currently a Research Intern at **IBM Silicon Valley Lab**, and I work closely with [**Cheng Tan**](https://tancheng.github.io/).
+My research focuses on **AI for Chip Design** and **Computer Architecture**, particularly LLM-based design automation, reconfigurable accelerators, and hardware/software co-design. I am currently a Research Intern at **IBM Silicon Valley Lab**.
 
 <span class="tag">LLM-based Hardware Architecture Generation</span> <span class="tag">LLM for Chip Physical Design</span> <span class="tag">Reconfigurable Accelerators (CGRA)</span> <span class="tag">HW/SW Co-Design for Efficient AI</span>
 
-Always happy to discuss research and collaborations — reach me at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.
+I welcome research discussions and collaborations. You can reach me at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.
 
 # 🔥 News
 - *2026.05*: &nbsp;🔬 Joined **IBM Silicon Valley Lab** as a Research Intern.
@@ -55,12 +55,12 @@ Always happy to discuss research and collaborations — reach me at <a href="mai
 </div>
 
 <div class="pub-card">
-<div class="pub-thumb"><img src="images/publications/iicpilot.svg" alt="IICPilot"></div>
+<div class="pub-thumb"><a href="images/publications/iicpilot.png" title="View full figure"><img src="images/publications/iicpilot.png" alt="IICPilot multi-agent backend design framework"></a></div>
 <div class="pub-body" markdown="1">
 **IICPilot: An Intelligent Integrated Circuit Backend Design Framework Using Open EDA** <span class="pub-venue">arXiv 2024</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Qing Zhang, Cheng Liu, Long Cheng, Huawei Li, Xiaowei Li</span>
 <span class="pub-intro">A multi-agent LLM framework that automates IC backend design on open-source EDA, exploring design parameters inside resource-optimized containers.</span>
-<span class="pub-links">[arXiv](https://arxiv.org/abs/2407.12576)</span>
+<span class="pub-links">[Paper](https://arxiv.org/abs/2407.12576) [DBLP](https://dblp.org/rec/journals/corr/abs-2407-12576.html)</span>
 </div>
 </div>
 
@@ -68,39 +68,39 @@ Always happy to discuss research and collaborations — reach me at <a href="mai
 <div class="pub-thumb"><img src="images/publications/cryofpga.svg" alt="Cryogenic FPGA study"></div>
 <div class="pub-body" markdown="1">
 **Break the Cold Barrier: An In-Depth Study on FPGA Performance and Design Optimization at Cryogenic Temperature** <span class="pub-venue">Integrated Circuits and Systems 2024</span>
-<span class="pub-authors"><u>Zesong Jiang</u>, Muhan Zhang, Qingyun Liu</span>
-<span class="pub-intro">An in-depth study of FPGA performance at cryogenic temperature, with design optimizations for reliable cold operation.</span>
-<span class="pub-links">[IEEE](https://ieeexplore.ieee.org/document/10755040)</span>
+<span class="pub-authors"><u>Zesong Jiang</u>, Muhan Zhang, Qingyun Liu, Runze Liu</span>
+<span class="pub-intro">A 500-point design-space study that identifies high-performance and low-power FPGA architectures for cryogenic operation.</span>
+<span class="pub-links">[Paper](https://doi.org/10.23919/ICS.2024.3499944) [IEEE Xplore](https://ieeexplore.ieee.org/document/10755040)</span>
 </div>
 </div>
 
 <div class="pub-card">
-<div class="pub-thumb"><img src="images/publications/sigdla.svg" alt="SigDLA"></div>
+<div class="pub-thumb"><a href="images/publications/sigdla.png" title="View full figure"><img src="images/publications/sigdla.png" alt="SigDLA accelerator architecture"></a></div>
 <div class="pub-body" markdown="1">
 **SigDLA: A Deep Learning Accelerator Extension for Signal Processing** <span class="pub-venue">arXiv 2024</span>
 <span class="pub-authors">Fangfa Fu, Wenyu Zhang, <u>Zesong Jiang</u>, Zhiyu Zhu, Guoyu Li, Bing Yang, Cheng Liu, Liyi Xiao, Jinxiang Wang, Huawei Li, et al.</span>
 <span class="pub-intro">A deep-learning accelerator extension that unifies signal-processing and DL workloads by extending NVDLA.</span>
-<span class="pub-links">[arXiv](https://arxiv.org/abs/2407.12565)</span>
+<span class="pub-links">[Paper](https://arxiv.org/abs/2407.12565)</span>
 </div>
 </div>
 
 <div class="pub-card">
-<div class="pub-thumb"><img src="images/publications/lfmri.svg" alt="Low-Field MRI platform"></div>
+<div class="pub-thumb"><a href="images/publications/lfmri.png" title="View full figure"><img src="images/publications/lfmri.png" alt="Eight-channel low-field MRI signal processing board"></a></div>
 <div class="pub-body" markdown="1">
 **A Low-Field Magnetic Resonance Signal Transmission and Reception Processing Platform** <span class="pub-venue">ICICSP 2024</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Muhan Zhang, Qing Zhang, Yuchong Xie</span>
-<span class="pub-intro">A signal transmission and reception processing platform for low-field magnetic resonance imaging.</span>
-<span class="pub-links">[arXiv](https://arxiv.org/abs/2409.08671)</span>
+<span class="pub-intro">A single-FPGA platform combining RF pulse generation with simultaneous eight-channel MRI signal acquisition and processing.</span>
+<span class="pub-links">[Paper](https://arxiv.org/abs/2409.08671)</span>
 </div>
 </div>
 
 <div class="pub-card">
-<div class="pub-thumb"><img src="images/publications/piezo.svg" alt="Biodegradable piezoelectric scaffold"></div>
+<div class="pub-thumb"><a href="images/publications/piezo.jpg" title="View full figure"><img src="images/publications/piezo.jpg" alt="Piezoelectric scaffold fabrication and spinal cord repair concept"></a></div>
 <div class="pub-body" markdown="1">
 **A Biodegradable Piezoelectric Scaffold Promotes Spinal Cord Injury Nerve Regeneration** <span class="pub-venue">Nano Energy 2024</span>
 <span class="pub-authors">Jinjing Zhang, Qiong Wang, Xiaoyi Tang, Mingyang Chai, Nuo Liu, <u>Zesong Jiang</u>, Xingjiang Li, Ping Chen</span>
 <span class="pub-intro">A biodegradable piezoelectric scaffold that promotes nerve regeneration after spinal cord injury (co-authored). <em>Nano Energy</em>, vol. 132, p. 110382.</span>
-<span class="pub-links">[DOI](https://doi.org/10.1016/j.nanoen.2024.110382)</span>
+<span class="pub-links">[Paper](https://doi.org/10.1016/j.nanoen.2024.110382)</span>
 </div>
 </div>
 
