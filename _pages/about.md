@@ -39,8 +39,8 @@ I welcome research discussions and collaborations. You can reach me at <a href="
 <div class="pub-body" markdown="1">
 **MACO: A Multi-Agent LLM Framework for Automated CGRA Hardware/Software Co-Design** <span class="pub-venue">ICLAD 2026</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Yuqi Sun, Qing Zhong, Mahathi Krishna, Deepak Patil, Cheng Tan, Jeff Zhang</span>
-<span class="pub-intro">Specialized LLM agents co-design CGRA hardware and software end-to-end (OpenCGRA + commercial EDA, ASAP7 7nm), <span class="pub-note">−25.9% power and +20.0% performance</span> over human experts and prior LLM methods. Long paper (20% acceptance).</span>
-<span class="pub-links">[arXiv](https://arxiv.org/abs/2509.13557)</span>
+<span class="pub-intro">Automates CGRA hardware/software co-design through four collaborative stages: design generation, error correction, best-design selection, and evaluation with feedback. Evaluation reports 25.9% lower power, 20.0% higher performance, and 5× faster design-space search, with final designs validated through a complete 7 nm ASIC flow.</span>
+<span class="pub-links">[Paper](https://arxiv.org/pdf/2509.13557)</span>
 </div>
 </div>
 
@@ -49,18 +49,18 @@ I welcome research discussions and collaborations. You can reach me at <a href="
 <div class="pub-body" markdown="1">
 **CAPO: Certification-Guided Agentic Workflow for Physical Design Parameter Optimization** <span class="pub-venue">GLSVLSI 2026</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Qihang Wu, Bing-yue Wu, Jeff Zhang</span>
-<span class="pub-intro">An agentic workflow that optimizes physical-design parameters, using certification/verification feedback to steer the search toward better PPA.</span>
-<span class="pub-links">[ACM](https://dl.acm.org/doi/10.1145/3787109.3816403)</span>
+<span class="pub-intro">Formulates physical-design optimization as certified trajectory control, combining structured flow-state abstraction, bottleneck-aware planning, and transition certification to reject harmful actions and support recovery across coupled design stages.</span>
+<span class="pub-links">[Paper](https://doi.org/10.1145/3787109.3816403)</span>
 </div>
 </div>
 
 <div class="pub-card">
 <div class="pub-thumb"><a href="images/publications/iicpilot.png" title="View full figure"><img src="images/publications/iicpilot.png" alt="IICPilot multi-agent backend design framework"></a></div>
 <div class="pub-body" markdown="1">
-**IICPilot: An Intelligent Integrated Circuit Backend Design Framework Using Open EDA** <span class="pub-venue">arXiv 2024</span>
+**IICPilot: An Intelligent Integrated Circuit Backend Design Framework Using Open EDA** <span class="pub-venue">Preprint 2024</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Qing Zhang, Cheng Liu, Long Cheng, Huawei Li, Xiaowei Li</span>
-<span class="pub-intro">A multi-agent LLM framework that automates IC backend design on open-source EDA, exploring design parameters inside resource-optimized containers.</span>
-<span class="pub-links">[Paper](https://arxiv.org/abs/2407.12576) [DBLP](https://dblp.org/rec/journals/corr/abs-2407-12576.html)</span>
+<span class="pub-intro">Automates backend-design script generation, EDA-tool execution, parameter exploration, container resource allocation, and exception handling through specialized agents and a unified interface for OpenROAD and iEDA.</span>
+<span class="pub-links">[Paper](https://arxiv.org/pdf/2407.12576)</span>
 </div>
 </div>
 
@@ -69,18 +69,18 @@ I welcome research discussions and collaborations. You can reach me at <a href="
 <div class="pub-body" markdown="1">
 **Break the Cold Barrier: An In-Depth Study on FPGA Performance and Design Optimization at Cryogenic Temperature** <span class="pub-venue">Integrated Circuits and Systems 2024</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Muhan Zhang, Qingyun Liu, Runze Liu</span>
-<span class="pub-intro">A 500-point design-space study that identifies high-performance and low-power FPGA architectures for cryogenic operation.</span>
-<span class="pub-links">[Paper](https://doi.org/10.23919/ICS.2024.3499944) [IEEE Xplore](https://ieeexplore.ieee.org/document/10755040)</span>
+<span class="pub-intro">Characterizes FPGA behavior at cryogenic temperature and uses CryoFPGA-Pilot to explore a 500-point architecture space for low-delay and low-power designs.</span>
+<span class="pub-links">[Paper](https://doi.org/10.23919/ICS.2024.3499944)</span>
 </div>
 </div>
 
 <div class="pub-card">
 <div class="pub-thumb"><a href="images/publications/sigdla.png" title="View full figure"><img src="images/publications/sigdla.png" alt="SigDLA accelerator architecture"></a></div>
 <div class="pub-body" markdown="1">
-**SigDLA: A Deep Learning Accelerator Extension for Signal Processing** <span class="pub-venue">arXiv 2024</span>
+**SigDLA: A Deep Learning Accelerator Extension for Signal Processing** <span class="pub-venue">Preprint 2024</span>
 <span class="pub-authors">Fangfa Fu, Wenyu Zhang, <u>Zesong Jiang</u>, Zhiyu Zhu, Guoyu Li, Bing Yang, Cheng Liu, Liyi Xiao, Jinxiang Wang, Huawei Li, et al.</span>
-<span class="pub-intro">A deep-learning accelerator extension that unifies signal-processing and DL workloads by extending NVDLA.</span>
-<span class="pub-links">[Paper](https://arxiv.org/abs/2407.12565)</span>
+<span class="pub-intro">Extends a conventional deep-learning accelerator with programmable data shuffling and a reconfigurable compute array, converting irregular signal-processing patterns into regular operations while preserving deep-learning support.</span>
+<span class="pub-links">[Paper](https://arxiv.org/pdf/2407.12565)</span>
 </div>
 </div>
 
@@ -89,8 +89,8 @@ I welcome research discussions and collaborations. You can reach me at <a href="
 <div class="pub-body" markdown="1">
 **A Low-Field Magnetic Resonance Signal Transmission and Reception Processing Platform** <span class="pub-venue">ICICSP 2024</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Muhan Zhang, Qing Zhang, Yuchong Xie</span>
-<span class="pub-intro">A single-FPGA platform combining RF pulse generation with simultaneous eight-channel MRI signal acquisition and processing.</span>
-<span class="pub-links">[Paper](https://arxiv.org/abs/2409.08671)</span>
+<span class="pub-intro">Implements low-field MRI transmission and reception on an FPGA: direct digital synthesis generates adjustable RF pulses, while digital downconversion and CIC/FIR filters recover baseband signals.</span>
+<span class="pub-links">[Paper](https://arxiv.org/pdf/2409.08671)</span>
 </div>
 </div>
 
@@ -99,7 +99,7 @@ I welcome research discussions and collaborations. You can reach me at <a href="
 <div class="pub-body" markdown="1">
 **A Biodegradable Piezoelectric Scaffold Promotes Spinal Cord Injury Nerve Regeneration** <span class="pub-venue">Nano Energy 2024</span>
 <span class="pub-authors">Jinjing Zhang, Qiong Wang, Xiaoyi Tang, Mingyang Chai, Nuo Liu, <u>Zesong Jiang</u>, Xingjiang Li, Ping Chen</span>
-<span class="pub-intro">A biodegradable piezoelectric scaffold that promotes nerve regeneration after spinal cord injury (co-authored). <em>Nano Energy</em>, vol. 132, p. 110382.</span>
+<span class="pub-intro">Develops a biodegradable PLLA/KNN@PDA piezoelectric scaffold that provides structural guidance and sustained electrical stimulation, promoting neural growth and functional recovery in a rat spinal-cord injury model.</span>
 <span class="pub-links">[Paper](https://doi.org/10.1016/j.nanoen.2024.110382)</span>
 </div>
 </div>
