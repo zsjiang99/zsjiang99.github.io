@@ -19,60 +19,86 @@ redirect_from:
 
 Hello! I am **Zesong Jiang**, a Ph.D. student in the School of Electrical, Computer and Energy Engineering (ECEE) at **Arizona State University**, advised by **Prof. Jeff Zhang**. I received my M.S. from the **University of Science and Technology of China (USTC)** in 2025, advised by Prof. Bensheng Qiu, and my B.S. from **Jilin University** in 2022.
 
-My research builds **LLM-based multi-agent systems that automate chip design and verification** — spanning RTL generation, design-space exploration, and physical design — as well as **hardware accelerators for efficient AI**. I am also currently a Research Intern at **IBM Silicon Valley Lab**, working on agentic workflows for chip physical design.
+I build **LLM-based multi-agent systems that automate chip design and verification**, and **hardware accelerators for efficient AI**. I am also currently a Research Intern at **IBM Silicon Valley Lab**.
 
-**Research Interests:**
+<span class="tag">Multi-Agent Systems for EDA</span> <span class="tag">LLM for Chip Design & Verification</span> <span class="tag">Agentic Workflows</span> <span class="tag">Hardware Accelerators for ML</span> <span class="tag">Efficient AI</span>
 
-<span class="tag">Multi-Agent Systems for EDA</span> <span class="tag">LLM for Chip Design & Verification</span> <span class="tag">AI Copilots / Agentic Workflows</span> <span class="tag">Hardware Accelerators for ML</span> <span class="tag">Efficient AI Algorithms</span>
-
-I am always happy to discuss research and collaborations — feel free to reach out at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.
+Always happy to discuss research and collaborations — reach me at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.
 
 # 🔥 News
-- *2026.05*: &nbsp;🔬 Started as a Research Intern at **IBM Silicon Valley Lab**, working on agentic workflows for chip physical design.
-- *2026*: &nbsp;📄 Two papers accepted — **MACO** at **ICLAD 2026** (long paper, 20% acceptance rate) and **CAPO** at **GLSVLSI 2026**.
-- *2026.03*: &nbsp;🎤 Presented **MACO** at the **NSF Workshop on Agents for Chip Design Automation** and received the **Student Travel Award**.
-- *2025.08*: &nbsp;🚀 Began my **Ph.D.** in ECEE at **Arizona State University**, advised by Prof. Jeff Zhang.
-- *2025.06*: &nbsp;🎓 Graduated from **USTC**; named **Outstanding Graduate of Anhui Province** (12 / 305) and Outstanding Graduate of USTC.
+- *2026.05*: &nbsp;🔬 Joined **IBM Silicon Valley Lab** as a Research Intern.
+- *2026.03*: &nbsp;🎤 Gave an invited talk on **MACO** at the **NSF Workshop on Agents for Chip Design Automation** — received the **Student Travel Award**.
+- *2026.02*: &nbsp;📄 **MACO** and **CAPO** accepted (see [Publications](#-publications)).
+- *2025.08*: &nbsp;🚀 Started my **Ph.D.** at **Arizona State University**.
+- *2025.06*: &nbsp;🎓 Graduated from **USTC** as **Outstanding Graduate of Anhui Province**.
 
 # 📝 Publications
 
-<div class="pub-item" markdown="1">
+<div class="pub-card">
+<div class="pub-thumb"><img src="images/publications/maco.svg" alt="MACO"></div>
+<div class="pub-body" markdown="1">
 **MACO: A Multi-Agent LLM Framework for Automated CGRA Hardware/Software Co-Design** <span class="pub-venue">ICLAD 2026</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Yuqi Sun, Qing Zhong, Mahathi Krishna, Deepak Patil, Cheng Tan, Jeff Zhang</span>
-Long paper (20% acceptance rate) · <span class="pub-note">−25.9% power and +20.0% performance vs. human experts and prior LLM-based methods</span>
+<span class="pub-intro">Specialized LLM agents co-design CGRA hardware and software end-to-end (OpenCGRA + commercial EDA, ASAP7 7nm), <span class="pub-note">−25.9% power and +20.0% performance</span> over human experts and prior LLM methods. Long paper (20% acceptance).</span>
+</div>
 </div>
 
-<div class="pub-item" markdown="1">
+<div class="pub-card">
+<div class="pub-thumb"><img src="images/publications/capo.svg" alt="CAPO"></div>
+<div class="pub-body" markdown="1">
 **CAPO: Certification-Guided Agentic Workflow for Physical Design Parameter Optimization** <span class="pub-venue">GLSVLSI 2026</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Qihang Wu, Bing-yue Wu, Jeff Zhang</span>
-Proceedings of the 36th Great Lakes Symposium on VLSI
+<span class="pub-intro">An agentic workflow that optimizes physical-design parameters, using certification/verification feedback to steer the search toward better PPA.</span>
+</div>
 </div>
 
-<div class="pub-item" markdown="1">
-**[IICPilot: An Intelligent Integrated Circuit Backend Design Framework Using Open EDA](https://arxiv.org/abs/2407.12576)** <span class="pub-venue">arXiv 2024</span>
+<div class="pub-card">
+<div class="pub-thumb"><img src="images/publications/iicpilot.svg" alt="IICPilot"></div>
+<div class="pub-body" markdown="1">
+**IICPilot: An Intelligent Integrated Circuit Backend Design Framework Using Open EDA** <span class="pub-venue">arXiv 2024</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Qing Zhang, Cheng Liu, Long Cheng, Huawei Li, Xiaowei Li</span>
+<span class="pub-intro">A multi-agent LLM framework that automates IC backend design on open-source EDA, exploring design parameters inside resource-optimized containers.</span>
+<span class="pub-links">[arXiv](https://arxiv.org/abs/2407.12576)</span>
+</div>
 </div>
 
-<div class="pub-item" markdown="1">
-**[Break the Cold Barrier: An In-Depth Study on FPGA Performance and Design Optimization at Cryogenic Temperature](https://ieeexplore.ieee.org/document/10755040)** <span class="pub-venue">Integrated Circuits and Systems 2024</span>
+<div class="pub-card">
+<div class="pub-thumb"><img src="images/publications/cryofpga.svg" alt="Cryogenic FPGA study"></div>
+<div class="pub-body" markdown="1">
+**Break the Cold Barrier: An In-Depth Study on FPGA Performance and Design Optimization at Cryogenic Temperature** <span class="pub-venue">Integrated Circuits and Systems 2024</span>
 <span class="pub-authors"><u>Zesong Jiang</u>, Muhan Zhang, Qingyun Liu</span>
+<span class="pub-intro">An in-depth study of FPGA performance at cryogenic temperature, with design optimizations for reliable cold operation.</span>
+<span class="pub-links">[IEEE](https://ieeexplore.ieee.org/document/10755040)</span>
+</div>
 </div>
 
-<div class="pub-item" markdown="1">
+<div class="pub-card">
+<div class="pub-thumb"><img src="images/publications/sigdla.svg" alt="SigDLA"></div>
+<div class="pub-body" markdown="1">
+**SigDLA: A Deep Learning Accelerator Extension for Signal Processing** <span class="pub-venue">arXiv 2024</span>
+<span class="pub-authors">Fangfa Fu, Wenyu Zhang, <u>Zesong Jiang</u>, Zhiyu Zhu, Guoyu Li, Bing Yang, Cheng Liu, Liyi Xiao, Jinxiang Wang, Huawei Li, et al.</span>
+<span class="pub-intro">A deep-learning accelerator extension that unifies signal-processing and DL workloads by extending NVDLA.</span>
+<span class="pub-links">[arXiv](https://arxiv.org/abs/2407.12565)</span>
+</div>
+</div>
+
+<div class="pub-card">
+<div class="pub-thumb"><img src="images/publications/lfmri.svg" alt="Low-Field MRI platform"></div>
+<div class="pub-body" markdown="1">
+**A Low-Field Magnetic Resonance Signal Transmission and Reception Processing Platform** <span class="pub-venue">ICICSP 2024</span>
+<span class="pub-authors"><u>Zesong Jiang</u>, Muhan Zhang, Qing Zhang, Yuchong Xie</span>
+<span class="pub-intro">A signal transmission and reception processing platform for low-field magnetic resonance imaging.</span>
+<span class="pub-links">[arXiv](https://arxiv.org/abs/2409.08671)</span>
+</div>
+</div>
+
+<div class="pub-card">
+<div class="pub-thumb"><img src="images/publications/piezo.svg" alt="Biodegradable piezoelectric scaffold"></div>
+<div class="pub-body" markdown="1">
 **A Biodegradable Piezoelectric Scaffold Promotes Spinal Cord Injury Nerve Regeneration** <span class="pub-venue">Nano Energy 2024</span>
 <span class="pub-authors">Jinjing Zhang, Qiong Wang, Xiaoyi Tang, Mingyang Chai, Nuo Liu, <u>Zesong Jiang</u>, Xingjiang Li, Ping Chen</span>
-Vol. 132, p. 110382
+<span class="pub-intro">A biodegradable piezoelectric scaffold that promotes nerve regeneration after spinal cord injury (co-authored). <em>Nano Energy</em>, vol. 132, p. 110382.</span>
 </div>
-
-<div class="pub-item" markdown="1">
-**[SigDLA: A Deep Learning Accelerator Extension for Signal Processing](https://arxiv.org/abs/2407.12565)** <span class="pub-venue">arXiv 2024</span>
-<span class="pub-authors">Fangfa Fu, Wenyu Zhang, <u>Zesong Jiang</u>, Zhiyu Zhu, Guoyu Li, Bing Yang, Cheng Liu, Liyi Xiao, Jinxiang Wang, Huawei Li, et al.</span>
-</div>
-
-<div class="pub-item" markdown="1">
-**[A Low-Field Magnetic Resonance Signal Transmission and Reception Processing Platform](https://arxiv.org/abs/2409.08671)** <span class="pub-venue">ICICSP 2024</span>
-<span class="pub-authors"><u>Zesong Jiang</u>, Muhan Zhang, Qing Zhang, Yuchong Xie</span>
-2024 7th International Conference on Information Communication and Signal Processing, IEEE, pp. 65–69
 </div>
 
 # 💻 Experience

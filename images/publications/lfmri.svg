@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="LF-MRI">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#be123c"/>
+      <stop offset="1" stop-color="#9f1239"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="200" fill="url(#g)"/>
+  <g stroke="#ffffff" stroke-opacity="0.13" stroke-width="1.3" fill="none">
+    <path d="M0 32 H54 V6"/>
+    <path d="M300 60 H246 V22"/>
+    <path d="M0 168 H40 V196"/>
+    <path d="M300 150 H262 V190"/>
+  </g>
+  <g fill="#ffffff" fill-opacity="0.18">
+    <circle cx="54" cy="32" r="3"/>
+    <circle cx="246" cy="60" r="3"/>
+    <circle cx="40" cy="168" r="3"/>
+    <circle cx="262" cy="150" r="3"/>
+  </g>
+  <text x="150" y="94" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="#ffffff" letter-spacing="0.5">LF-MRI</text>
+  <line x1="127" y1="110" x2="173" y2="110" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.4"/>
+  <text x="150" y="131" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="12.5" fill="#ffffff" fill-opacity="0.92">Low-Field MRI Platform</text>
+  <text x="150" y="180" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" letter-spacing="1.6" fill="#ffffff" fill-opacity="0.8">ICICSP 2024</text>
+</svg>
