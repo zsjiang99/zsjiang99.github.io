@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zesong Jiang</title>
+<meta name="description" content="Zesong Jiang is a Ph.D. student at Arizona State University working on AI for chip design and computer architecture.">
+<meta property="og:title" content="Zesong Jiang">
+<meta property="og:description" content="Ph.D. student at Arizona State University · AI for chip design and computer architecture">
+<meta property="og:image" content="https://zsjiang99.github.io/images/avatar.jpg">
+<meta property="og:url" content="https://zsjiang99.github.io/">
+<link rel="canonical" href="https://zsjiang99.github.io/">
+<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<script>try{var t=localStorage.getItem('theme'); if(t==='light'||t==='dark') document.documentElement.dataset.theme=t;}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FCFCFB; --panel:#F4F5F6;
+  --ink:#141A24; --ink-2:#39404C; --muted:#6B717C; --faint:#9AA0AA; --rule:#E6E7EA;
+  --accent:#B8532B; --img-dim:none; --pill:#EEF0F2;
+  --sw:clamp(290px, 23vw, 340px);
+  --serif:"Source Serif 4", Georgia, serif;
+  --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+:root{color-scheme:light}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ color-scheme:dark; --bg:#111419; --panel:#161A20; --ink:#ECEEF1; --ink-2:#C8CCD3; --muted:#949AA4; --faint:#6A707A; --rule:#262A31; --accent:#E8936B; --img-dim:brightness(.88); --pill:#20242B; }
+}
+:root[data-theme="dark"]{ color-scheme:dark; --bg:#111419; --panel:#161A20; --ink:#ECEEF1; --ink-2:#C8CCD3; --muted:#949AA4; --faint:#6A707A; --rule:#262A31; --accent:#E8936B; --img-dim:brightness(.88); --pill:#20242B; }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:32px}
+body{margin:0; color:var(--ink-2); font:15.5px/1.7 var(--sans); -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+     background:linear-gradient(to right, var(--panel) 0 calc(var(--sw) - 1px), var(--rule) calc(var(--sw) - 1px) var(--sw), var(--bg) var(--sw))}
+a{color:var(--accent); text-decoration:underline; text-decoration-color:color-mix(in srgb, var(--accent) 35%, transparent); text-underline-offset:4px; text-decoration-thickness:1px; transition:color .2s, text-decoration-color .2s}
+a:hover{text-decoration-color:currentColor}
+a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:3px}
+strong{color:var(--ink); font-weight:500}
+img{display:block; max-width:100%}
+p{text-wrap:pretty}
+h1,h2,h3{text-wrap:balance}
+
+.layout{display:grid; grid-template-columns:var(--sw) 1fr; min-height:100vh}
+
+/* sidebar */
+aside{position:sticky; top:0; height:100vh; overflow-y:auto; padding:56px 36px 28px; display:flex; flex-direction:column}
+.id{display:flex; flex-direction:column; align-items:center; align-self:flex-start}
+.avatar{width:128px; height:128px; border-radius:50%; object-fit:cover; margin:0 0 24px}
+.name{font:600 32px/1.1 var(--serif); letter-spacing:-.01em; color:var(--ink); margin:0 0 12px}
+.role{font-size:15px; line-height:1.55; color:var(--ink-2); margin:0 0 26px}
+.aff{font-size:14.5px; line-height:1.5; color:var(--muted); margin:4px 0 26px}
+.place{display:flex; align-items:center; gap:6px; font-size:14px; color:var(--muted); margin:-14px 0 22px}
+.place svg{width:14px; height:14px}
+.btns{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:0 0 32px}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; height:36px; padding:0 12px; border:1px solid var(--rule); border-radius:8px; background:var(--bg); color:var(--ink-2); font:500 13.5px/1 var(--sans); text-decoration:none; cursor:pointer; transition:border-color .2s, color .2s, background-color .2s}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+.btn svg{width:15px; height:15px; flex:none}
+.btn.wide{grid-column:1 / -1}
+.btn.done{border-color:var(--accent); color:var(--accent); background:color-mix(in srgb, var(--accent) 8%, var(--bg))}
+.toc{list-style:none; margin:0; padding:22px 0 0; border-top:1px solid var(--rule)}
+.toc a{position:relative; display:block; padding:4px 0 4px 14px; font-size:15px; color:var(--muted); text-decoration:none; transition:color .2s}
+.toc a:hover{color:var(--ink)}
+.toc a.on{color:var(--ink); font-weight:500}
+.toc a.on::before{content:""; position:absolute; left:0; top:50%; width:3px; height:15px; transform:translateY(-50%); border-radius:2px; background:var(--accent)}
+.side-foot{margin-top:auto; padding-top:28px; font-size:13px; color:var(--faint)}
+@media (max-height:700px) and (min-width:981px){ .side-foot{display:none} }
+@media (max-height:860px) and (min-width:981px){
+  aside{padding-top:36px}
+  .avatar{width:96px; height:96px; margin-bottom:16px}
+  .name{font-size:28px}
+  .contact{gap:5px; margin-bottom:22px}
+  .toc{padding-top:16px}
+  .toc a{padding:2px 0 2px 14px}
+}
+
+/* main */
+.content{max-width:900px; margin:0 auto; padding:88px clamp(28px, 5vw, 72px) 40px}
+section{padding-top:80px}
+section:first-child{padding-top:0}
+h2{font:600 26px/1.2 var(--serif); letter-spacing:-.01em; color:var(--ink); margin:0 0 24px; display:flex; align-items:baseline; justify-content:space-between; gap:20px}
+h2 .aside-link{font:500 13.5px/1 var(--sans); color:var(--accent); text-decoration:none}
+h2 .aside-link:hover{color:var(--accent)}
+.sub{font-size:13px; font-weight:500; color:var(--muted); margin:40px 0 4px}
+
+/* about */
+.lead{font:400 25px/1.45 var(--serif); letter-spacing:-.005em; color:var(--ink); margin:0 0 26px}
+.about{max-width:44rem}
+.about p:not(.lead){font-size:16px; margin:0 0 14px}
+
+/* news */
+.news{list-style:none; margin:0; padding:0}
+.news li{display:grid; grid-template-columns:84px 84px 1fr; gap:16px; padding:9px 0; font-size:16px}
+.news .cat{justify-self:start; align-self:start; margin-top:4px; padding:3px 8px; border-radius:5px; font-size:12px; line-height:1.2; font-weight:500; color:var(--muted); background:var(--pill)}
+.news .cat[data-c="Award"]{color:#8A5A12; background:#F6EBD5}
+.news .cat[data-c="Paper"]{color:#2D4F7C; background:#E3EBF5}
+.news .cat[data-c="Talk"]{color:#2F6B4F; background:#E1F0E8}
+.news .cat[data-c="Position"]{color:#5B4683; background:#ECE6F5}
+.news .cat[data-c="Education"]{color:#555C66; background:#ECEEF1}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .news .cat[data-c="Award"]{color:#E5C17E; background:rgba(229,193,126,.13)}
+  :root:not([data-theme="light"]) .news .cat[data-c="Paper"]{color:#9FBAE2; background:rgba(159,186,226,.13)}
+  :root:not([data-theme="light"]) .news .cat[data-c="Talk"]{color:#8ECDAD; background:rgba(142,205,173,.13)}
+  :root:not([data-theme="light"]) .news .cat[data-c="Position"]{color:#BCA9E4; background:rgba(188,169,228,.13)}
+  :root:not([data-theme="light"]) .news .cat[data-c="Education"]{color:#A9AFB9; background:rgba(169,175,185,.12)}
+}
+:root[data-theme="dark"] .news .cat[data-c="Award"]{color:#E5C17E; background:rgba(229,193,126,.13)}
+:root[data-theme="dark"] .news .cat[data-c="Paper"]{color:#9FBAE2; background:rgba(159,186,226,.13)}
+:root[data-theme="dark"] .news .cat[data-c="Talk"]{color:#8ECDAD; background:rgba(142,205,173,.13)}
+:root[data-theme="dark"] .news .cat[data-c="Position"]{color:#BCA9E4; background:rgba(188,169,228,.13)}
+:root[data-theme="dark"] .news .cat[data-c="Education"]{color:#A9AFB9; background:rgba(169,175,185,.12)}
+.news .date{font-size:13px; line-height:2; position:relative}
+.news li.new .date::before{content:""; position:absolute; left:-14px; top:13px; width:6px; height:6px; margin-top:-3px; border-radius:50%; background:var(--accent)}
+.date{font:400 12.5px/1.95 var(--mono); color:var(--muted); white-space:nowrap}
+
+/* research */
+.intro{font-size:16px; margin:0 0 8px; max-width:44em}
+.themes{margin-top:4px; border-bottom:1px solid var(--rule)}
+.theme{display:grid; grid-template-columns:220px 1fr; gap:32px; padding:22px 0; border-top:1px solid var(--rule)}
+.theme h3{font:600 18.5px/1.35 var(--serif); color:var(--ink); margin:0}
+.theme p{font-size:15px; margin:0 0 8px}
+.related{font-size:13.5px; color:var(--faint)}
+.related a{color:var(--accent)}
+
+/* publications */
+.pubs{border-top:1px solid var(--rule)}
+.pub{display:grid; grid-template-columns:52% 1fr; align-items:center; grid-template-areas:"thumb head" "sum sum"; column-gap:28px; row-gap:16px; padding:28px 0; border-bottom:1px solid var(--rule)}
+.pub > .thumb{grid-area:thumb}
+.pub > div{grid-area:head; align-self:center}
+.pub > .summary{grid-area:sum}
+.thumb{display:block; cursor:zoom-in}
+.thumb img{filter:var(--img-dim); width:100%; height:auto; border-radius:6px; transition:opacity .2s}
+.thumb:hover img{opacity:.92}
+.venue{font:400 12px/1 var(--mono); color:var(--accent)}
+.pub h3{font:600 19px/1.38 var(--serif); color:var(--ink); margin:8px 0 8px}
+.authors{font-size:14px; color:var(--muted); margin:0 0 8px; line-height:1.6}
+.me{color:var(--ink); font-weight:600}
+.summary{font-size:14.5px; margin:0; line-height:1.65}
+.plinks{margin-top:12px; display:flex; gap:8px}
+.plist{list-style:none; margin:0; padding:0}
+.plist li{display:grid; grid-template-columns:64px 1fr auto; gap:24px; align-items:baseline; padding:14px 0; border-bottom:1px solid var(--rule)}
+.plist .v{font:400 12px/1.7 var(--mono); color:var(--muted)}
+.plist .t{font:600 16px/1.45 var(--serif); color:var(--ink)}
+.plist .a{display:block; font-size:13px; color:var(--muted); margin-top:3px}
+.plist .me{color:var(--ink-2)}
+.plist .vn{display:block; font-size:13px; font-style:italic; color:var(--muted); margin-top:2px}
+.plist .ls{display:flex; gap:8px; white-space:nowrap}
+.pbtn{display:inline-flex; align-items:center; gap:6px; height:28px; padding:0 10px; border:1px solid var(--rule); border-radius:6px; color:var(--ink-2); font:500 12.5px/1 var(--sans); text-decoration:none; transition:border-color .2s, color .2s}
+.pbtn:hover{border-color:var(--accent); color:var(--accent)}
+.pbtn svg{width:13px; height:13px}
+
+/* rows */
+.rows{list-style:none; margin:0; padding:0; border-top:1px solid var(--rule)}
+.rows li{display:grid; grid-template-columns:1fr auto; gap:24px; padding:16px 0; border-bottom:1px solid var(--rule)}
+.rows .t{font:600 17px/1.4 var(--serif); color:var(--ink)}
+.rows .r{font-size:14.5px; color:var(--ink-2)}
+.rows .s{font-size:14px; color:var(--muted); margin-top:3px}
+.rows a{color:inherit; text-decoration-color:color-mix(in srgb, currentColor 30%, transparent)}
+.rows a:hover{color:var(--accent)}
+.rows .meta{text-align:right}
+.rows .meta .date{display:block}
+.rows .meta .loc{display:block; font-size:12.5px; color:var(--faint)}
+.honors li{grid-template-columns:110px 1fr; padding:12px 0; font-size:15px}
+.skills{display:grid; grid-template-columns:110px 1fr; gap:8px 24px; margin:0; font-size:14.5px}
+.skills dt{color:var(--ink); font-weight:500}
+.skills dd{margin:0; color:var(--muted)}
+
+footer{display:flex; justify-content:space-between; margin-top:96px; padding-top:20px; border-top:1px solid var(--rule); font-size:13px; color:var(--faint)}
+footer a{color:var(--muted); text-decoration:none}
+
+.theme-toggle{position:fixed; top:18px; right:18px; z-index:20; width:36px; height:36px; border-radius:50%; border:1px solid var(--rule); background:var(--bg); color:var(--muted); display:grid; place-items:center; cursor:pointer; padding:0; transition:color .2s, border-color .2s, background-color .2s}
+.theme-toggle:hover{color:var(--accent); border-color:var(--accent)}
+.theme-toggle svg{width:16px; height:16px}
+.theme-toggle .sun{display:none}
+.theme-toggle[data-mode="dark"] .sun{display:block}
+.theme-toggle[data-mode="dark"] .moon{display:none}
+
+dialog{border:0; padding:0; background:transparent; max-width:min(1200px,94vw)}
+dialog::backdrop{background:rgba(17,20,25,.72)}
+dialog img{border-radius:6px; background:#fff; max-height:88vh}
+
+/* wide screens */
+@media (min-width:1680px){
+  :root{--sw:360px}
+  .content{max-width:1000px}
+  .name{font-size:35px}
+  .lead{font-size:27px}
+  .about{max-width:47rem}
+  .about p:not(.lead),.intro{font-size:17px}
+  h2{font-size:28px}
+  .news li{font-size:17px}
+  .theme{grid-template-columns:230px 1fr}
+  .theme h3{font-size:20px}
+  .theme p{font-size:16.5px}
+  .pub h3{font-size:19.5px}
+  .authors{font-size:15px}
+  .summary{font-size:15.5px}
+  .plist .t{font-size:16.5px}
+  .rows .t{font-size:18px}
+  .rows .r,.honors li,.skills{font-size:16px}
+  .rows .s{font-size:15.5px}
+}
+
+/* mobile */
+@media (max-width:980px){
+  body{background:var(--bg)}
+  .layout{grid-template-columns:1fr}
+  aside{position:static; height:auto; overflow:visible; padding:40px 20px 28px; background:var(--panel); border-bottom:1px solid var(--rule)}
+  .id{align-items:flex-start}
+  .avatar{width:88px; height:88px; margin:0 0 20px}
+  nav,.side-foot{display:none}
+  .btns{margin:0; max-width:360px}
+  .news li.new .date::before{left:auto; right:-12px}
+  .content{padding:44px 20px 32px}
+  section{padding-top:64px}
+  .lead{font-size:22px}
+  h2{font-size:24px}
+  .news li{grid-template-columns:auto 1fr; gap:0 12px}
+  .news li > span:last-child{grid-column:1 / -1}
+  .theme{grid-template-columns:1fr; gap:8px}
+  .pub{grid-template-columns:1fr; grid-template-areas:"thumb" "head" "sum"; gap:14px}
+  .plist li{grid-template-columns:1fr; gap:4px}
+  .rows li{grid-template-columns:1fr; gap:4px}
+  .rows .meta{text-align:left}
+  .honors li{grid-template-columns:1fr; gap:0}
+  .skills{grid-template-columns:1fr; gap:0}
+  .skills dd{margin-bottom:10px}
+}
+</style>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch between light and dark background" title="Switch background"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></button>
+<div class="layout">
+
+<aside>
+  <div class="id">
+    <img class="avatar" src="images/avatar.jpg" alt="Portrait of Zesong Jiang">
+    <h1 class="name">Zesong Jiang</h1>
+  </div>
+  <p class="role">Ph.D. Student<br>Arizona State University</p>
+  <p class="place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Tempe, AZ</p>
+  <div class="btns">
+    <button class="btn wide" id="copyEmail" type="button" data-email="zjian137@asu.edu" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg><span>zjian137@asu.edu</span></button>
+    <a class="btn" href="https://scholar.google.com/citations?user=M19sKtIAAAAJ&amp;hl=en"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 4 2 9.5 12 15l10-5.5L12 4Z"/><path d="M6 12v4.5c0 1.5 2.7 3 6 3s6-1.5 6-3V12"/></svg><span>Scholar</span></a>
+    <a class="btn" href="https://github.com/zsjiang99"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49l-.01-1.9c-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.85.09-.66.35-1.12.64-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.4 9.4 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>GitHub</span></a>
+  </div>
+  <nav aria-label="Sections"><ul class="toc">
+    <li><a href="#about" class="on">About</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#honors">Honors</a></li>
+  </ul></nav>
+  <div class="side-foot">&copy; 2026 Zesong Jiang</div>
+</aside>
+
+<main class="content">
+
+  <section class="about" id="about">
+    <p class="lead">My research focuses on AI for chip design and computer architecture, particularly LLM-aided design and agentic EDA, and hardware/software co&#8209;design for efficient AI.</p>
+    <p>I am a Ph.D. student in Electrical, Computer and Energy Engineering at Arizona State University, advised by <a href="https://search.asu.edu/profile/4346755">Prof. Jeff Zhang</a> and working closely with <a href="https://tancheng.github.io/">Cheng Tan</a>. I was a Research Intern at IBM Silicon Valley Lab in summer 2026. I received my M.S. from the University of Science and Technology of China (USTC) in 2025 and my B.S. from Jilin University in 2022.</p>
+    <p>I welcome research discussions and collaborations. You can reach me at <a href="mailto:zjian137@asu.edu">zjian137@asu.edu</a>.</p>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="date">Nov 2026</span><span class="cat" data-c="Award">Award</span><span>Received the <strong>LAD Fellowship</strong> from IEEE ICLAD, one of 11 recipients.</span></li>
+      <li><span class="date">Nov 2026</span><span class="cat" data-c="Paper">Paper</span><span><a href="#raco">RACO</a>, our agentic CGRA hardware/software co-design for FMCW radar with CHIA, was accepted to the <strong>A&sup3; Workshop at MICRO 2026</strong>.</span></li>
+      <li><span class="date">May 2026</span><span class="cat" data-c="Position">Position</span><span>Joined <strong>IBM Silicon Valley Lab</strong> as a Research Intern.</span></li>
+      <li><span class="date">May 2026</span><span class="cat" data-c="Paper">Paper</span><span><a href="#maco">MACO</a> was accepted to <strong>ICLAD 2026</strong>.</span></li>
+      <li><span class="date">May 2026</span><span class="cat" data-c="Paper">Paper</span><span><a href="#capo">CAPO</a> was accepted to <strong>GLSVLSI 2026</strong>.</span></li>
+      <li><span class="date">Mar 2026</span><span class="cat" data-c="Talk">Talk</span><span>Gave an invited talk on MACO at the <strong>NSF Workshop on Agents for Chip Design Automation</strong>.</span></li>
+      <li><span class="date">Aug 2025</span><span class="cat" data-c="Education">Education</span><span>Started my Ph.D. at <strong>Arizona State University</strong>.</span></li>
+      <li><span class="date">Jun 2025</span><span class="cat" data-c="Award">Award</span><span>Named an <strong>Outstanding Graduate of Anhui Province</strong> upon graduating from USTC.</span></li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="themes">
+      <div class="theme" id="t-eda">
+        <h3>LLM-aided design &amp; agentic EDA</h3>
+        <div>
+          <p>I build agentic workflows for chip design and optimization across architecture, RTL, and physical implementation.</p>
+          <div class="related">Related: <a href="#capo">CAPO</a>, <a href="#maco">MACO</a>, <a href="#iicpilot">IICPilot</a></div>
+        </div>
+      </div>
+      <div class="theme" id="t-codesign">
+        <h3>Hardware/software co&#8209;design &amp; efficient AI</h3>
+        <div>
+          <p>I work on domain-specific architectures and algorithm&ndash;hardware co-design for efficient and explainable AI.</p>
+          <div class="related">Related: <a href="#maco">MACO</a>, <a href="#raco">RACO</a>, <a href="#sigdla">SigDLA</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications <a class="aside-link" href="https://scholar.google.com/citations?user=M19sKtIAAAAJ&amp;hl=en">Google Scholar &#8599;</a></h2>
+    <div class="pubs">
+      <article class="pub" id="maco">
+        <a class="thumb" href="images/maco.png"><img src="images/maco.png" alt="MACO framework overview"></a>
+        <div>
+          <span class="venue">ICLAD 2026</span>
+          <h3>MACO: A Multi-Agent LLM Framework for Automated CGRA Hardware/Software Co-Design</h3>
+          <p class="authors"><span class="me">Zesong Jiang</span>, Yuqi Sun, Qing Zhong, Mahathi Krishna, Deepak Patil, Cheng Tan, Jeff Zhang</p>
+          <div class="plinks"><a class="pbtn" href="papers/maco.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Paper</a></div>
+        </div>
+          <p class="summary">Automates CGRA hardware/software co-design through four collaborative stages: design generation, error correction, best-design selection, and evaluation with feedback. Reports 25.9% lower power, 20.0% higher performance, and 5&times; faster design-space search, validated through a complete 7&nbsp;nm ASIC flow.</p>
+      </article>
+      <article class="pub" id="capo">
+        <a class="thumb" href="images/capo.png"><img src="images/capo.png" alt="CAPO workflow overview"></a>
+        <div>
+          <span class="venue">GLSVLSI 2026</span>
+          <h3>CAPO: Certification-Guided Agentic Workflow for Physical Design Parameter Optimization</h3>
+          <p class="authors"><span class="me">Zesong Jiang</span>, Qihang Wu, Bing-Yue Wu, Jeff Zhang</p>
+          <div class="plinks"><a class="pbtn" href="papers/capo.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Paper</a></div>
+        </div>
+          <p class="summary">Formulates physical-design optimization as certified trajectory control, combining structured flow-state abstraction, bottleneck-aware planning, and transition certification to reject harmful actions and support recovery across coupled design stages.</p>
+      </article>
+    </div>
+
+    <div class="sub">Other publications</div>
+    <ul class="plist">
+      <li id="raco"><span class="v">2026</span><span><span class="t">RACO: Agentic CGRA Hardware/Software Co-Design for FMCW Radar with CHIA</span><span class="a"><span class="me">Zesong Jiang</span>, Cheng Tan, Jeff Zhang</span><span class="vn">A&sup3; Workshop (Agentic Approaches to Architecture) at MICRO 2026</span></span><span class="ls"><a class="pbtn" href="papers/raco.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Paper</a></span></li>
+      <li id="iicpilot"><span class="v">2024</span><span><span class="t">IICPilot: An Intelligent Integrated Circuit Backend Design Framework Using Open EDA</span><span class="a"><span class="me">Zesong Jiang</span>, Qing Zhang, Cheng Liu, Long Cheng, Huawei Li, Xiaowei Li</span><span class="vn">arXiv preprint, 2024</span></span><span class="ls"><a class="pbtn" href="papers/iicpilot.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Paper</a></span></li>
+      <li id="cryofpga"><span class="v">2024</span><span><span class="t">Break the Cold Barrier: An In-Depth Study on FPGA Performance and Design Optimization at Cryogenic Temperature</span><span class="a"><span class="me">Zesong Jiang</span>, Muhan Zhang, Qingyun Liu, Runze Liu</span><span class="vn">Integrated Circuits and Systems (IEEE), vol. 1, no. 3, pp. 137&ndash;143, 2024</span></span><span class="ls"><a class="pbtn" href="https://doi.org/10.23919/ICS.2024.3499944"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Paper</a></span></li>
+      <li id="sigdla"><span class="v">2024</span><span><span class="t">SigDLA: A Deep Learning Accelerator Extension for Signal Processing</span><span class="a">Fangfa Fu, Wenyu Zhang, <span class="me">Zesong Jiang</span>, Zhiyu Zhu, Guoyu Li, Bing Yang, Cheng Liu, Liyi Xiao, Jinxiang Wang, Huawei Li, et al.</span><span class="vn">arXiv preprint, 2024</span></span><span class="ls"><a class="pbtn" href="papers/sigdla.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Paper</a></span></li>
+      <li><span class="v">2024</span><span><span class="t">A Low-Field Magnetic Resonance Signal Transmission and Reception Processing Platform</span><span class="a"><span class="me">Zesong Jiang</span>, Muhan Zhang, Qing Zhang, Yuchong Xie</span><span class="vn">International Conference on Information Communication and Signal Processing (ICICSP), 2024</span></span><span class="ls"><a class="pbtn" href="papers/lfmri.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Paper</a></span></li>
+      <li><span class="v">2024</span><span><span class="t">A Biodegradable Piezoelectric Scaffold Promotes Spinal Cord Injury Nerve Regeneration</span><span class="a">Jinjing Zhang, Qiong Wang, Xiaoyi Tang, Mingyang Chai, Nuo Liu, <span class="me">Zesong Jiang</span>, Xingjiang Li, Ping Chen</span><span class="vn">Nano Energy (Elsevier), vol. 132, 2024</span></span><span class="ls"><a class="pbtn" href="https://doi.org/10.1016/j.nanoen.2024.110382"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/></svg>Paper</a></span></li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="rows">
+      <li><div><div class="t">IBM Silicon Valley Lab</div><div class="r">Research Intern</div><div class="s">Built a reliable agentic workflow for long-horizon physical design, optimizing chip PPA and reducing manual design effort.</div></div><div class="meta"><span class="date">May 2026 &ndash; Aug 2026</span><span class="loc">San Jose, CA</span></div></li>
+      <li><div><div class="t">Arizona State University</div><div class="r">Graduate Research Assistant</div><div class="s">LLM for chip design, reconfigurable accelerators, and hardware/software co-design.</div></div><div class="meta"><span class="date">Aug 2025 &ndash; Present</span><span class="loc">Tempe, AZ</span></div></li>
+    </ul>
+    <div class="sub">Invited talks</div>
+    <ul class="rows">
+      <li><div><div class="t">MACO: A Multi-Agent Framework for LLM-Driven Hardware/Software Co-Design</div><div class="s">NSF Workshop on Agents for Chip Design Automation</div></div><div class="meta"><span class="date">Mar 2026</span></div></li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="rows">
+      <li><div><div class="t">Arizona State University</div><div class="r">Ph.D. in Electrical, Computer and Energy Engineering</div><div class="s">Advisor: <a href="https://search.asu.edu/profile/4346755">Prof. Jeff Zhang</a></div></div><div class="meta"><span class="date">2025 &ndash; Present</span></div></li>
+      <li><div><div class="t">University of Science and Technology of China</div><div class="r">M.S. in Electrical &amp; Computer Engineering</div><div class="s">Advisor: Prof. Bensheng Qiu &middot; GPA 3.87/4.3, rank 1/27</div></div><div class="meta"><span class="date">2022 &ndash; 2025</span></div></li>
+      <li><div><div class="t">Jilin University</div><div class="r">B.S. in Electrical &amp; Computer Engineering</div><div class="s">GPA 3.76/4.0, rank 21/335</div></div><div class="meta"><span class="date">2018 &ndash; 2022</span></div></li>
+    </ul>
+  </section>
+
+  <section id="honors">
+    <h2>Honors &amp; Awards</h2>
+    <ul class="rows honors">
+      <li><span class="date">2026</span><span>LAD Fellowship, IEEE ICLAD (one of 11 recipients)</span></li>
+      <li><span class="date">2026</span><span>Student Travel Award, NSF Agents4Chip</span></li>
+      <li><span class="date">2025</span><span>Outstanding Graduate of Anhui Province (12 out of 305)</span></li>
+      <li><span class="date">2025</span><span>Outstanding Graduate, University of Science and Technology of China</span></li>
+      <li><span class="date">2022 &ndash; 2024</span><span>Graduate Scholarship, First Prize, University of Science and Technology of China</span></li>
+      <li><span class="date">2018 &ndash; 2022</span><span>Undergraduate Scholarship, First Prize, Jilin University</span></li>
+    </ul>
+    <div class="sub">Skills</div>
+    <dl class="skills">
+      <dt>Programming</dt><dd>Verilog, C/C++, Python</dd>
+      <dt>EDA tools</dt><dd>Synopsys Design Compiler, OpenROAD, Yosys, VTR, COFFE, Vivado, Quartus, HSPICE, Verilator, Altium Designer</dd>
+      <dt>Tools</dt><dd>Git, Bash, MATLAB, LaTeX, VS Code</dd>
+    </dl>
+  </section>
+
+  <footer><span>Last updated November 2026</span><a href="#about">Back to top</a></footer>
+</main>
+</div>
+
+<dialog id="lb"><img alt=""></dialog>
+<script>
+const lb=document.getElementById('lb'), lbImg=lb.querySelector('img');
+document.querySelectorAll('a.thumb').forEach(a=>a.addEventListener('click',e=>{e.preventDefault(); lbImg.src=a.getAttribute('href'); lbImg.alt=a.querySelector('img').alt; lb.showModal();}));
+lb.addEventListener('click',()=>lb.close());
+const root=document.documentElement, tbtn=document.getElementById('themeToggle'), mq=matchMedia('(prefers-color-scheme: dark)');
+const mode=()=>root.dataset.theme||(mq.matches?'dark':'light');
+const sync=()=>tbtn.dataset.mode=mode();
+tbtn.addEventListener('click',()=>{const next=mode()==='dark'?'light':'dark'; root.dataset.theme=next; try{localStorage.setItem('theme',next);}catch(e){} sync();});
+mq.addEventListener('change',sync); sync();
+const cbtn=document.getElementById('copyEmail');
+cbtn.addEventListener('click',async()=>{const em=cbtn.dataset.email, lab=cbtn.querySelector('span');
+  try{await navigator.clipboard.writeText(em); lab.textContent='Copied'; cbtn.classList.add('done');}
+  catch(e){location.href='mailto:'+em; return;}
+  setTimeout(()=>{lab.textContent=em; cbtn.classList.remove('done');},1600);});
+const MON={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+document.querySelectorAll('.news li').forEach(li=>{const t=li.querySelector('.date').textContent.trim().split(/\s+/);
+  const d=new Date(+t[1], MON[t[0]], 15); if((Date.now()-d)/864e5 < 120) li.classList.add('new');});
+const links=[...document.querySelectorAll('.toc a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ links.forEach(l=>l.classList.toggle('on', l.getAttribute('href')==='#'+e.target.id)); } }),{rootMargin:'-12% 0px -78% 0px'});
+document.querySelectorAll('main section[id]').forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
